@@ -1,0 +1,64 @@
+/**
+ * This injects Tailwind's base styles, which is a combination of
+ * Normalize.css and some additional base styles.
+ *
+ * You can see the styles here:
+ * https://github.com/tailwindcss/tailwindcss/blob/master/css/base.css
+ *
+ * If using `postcss-import`, use this import instead:
+ *
+ * @import "tailwindcss/base";
+ */
+ @tailwind base;
+
+ /**
+  * This injects any component classes registered by plugins.
+  *
+  * If using `postcss-import`, use this import instead:
+  *
+  * @import "tailwindcss/components";
+  */
+ @tailwind components;
+ 
+ /**
+  * Here you would add any of your custom component classes; stuff that you'd
+  * want loaded *before* the utilities so that the utilities could still
+  * override them.
+  *
+  * Example:
+  *
+  * .btn { ... }
+  * .form-input { ... }
+  *
+  * Or if using a preprocessor or `postcss-import`:
+  *
+  * @import "components/buttons";
+  * @import "components/forms";
+  */
+ 
+ /**
+  * This injects all of Tailwind's utility classes, generated based on your
+  * config file.
+  *
+  * If using `postcss-import`, use this import instead:
+  *
+  * @import "tailwindcss/utilities";
+  */
+ @tailwind utilities;
+ 
+ /**
+  * Here you would add any custom utilities you need that don't come out of the
+  * box with Tailwind.
+  *
+  * Example :
+  *
+  * .bg-pattern-graph-paper { ... }
+  * .skew-45 { ... }
+  *
+  * Or if using a preprocessor or `postcss-import`:
+  *
+  * @import "utilities/background-patterns";
+  * @import "utilities/skew-transforms";
+  */
+ 
+/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbIi4uLy4uL3RhaWx3aW5kLmNvbmZpZy5jc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7Ozs7Ozs7RUFVRTtDQUNELGNBQWM7O0NBRWQ7Ozs7OztHQU1FO0NBQ0Ysb0JBQW9COztDQUVwQjs7Ozs7Ozs7Ozs7Ozs7R0FjRTs7Q0FFRjs7Ozs7OztHQU9FO0NBQ0YsbUJBQW1COztDQUVuQjs7Ozs7Ozs7Ozs7OztHQWFFIiwiZmlsZSI6InRhaWx3aW5kLm1pbi5jc3MiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIFRoaXMgaW5qZWN0cyBUYWlsd2luZCdzIGJhc2Ugc3R5bGVzLCB3aGljaCBpcyBhIGNvbWJpbmF0aW9uIG9mXG4gKiBOb3JtYWxpemUuY3NzIGFuZCBzb21lIGFkZGl0aW9uYWwgYmFzZSBzdHlsZXMuXG4gKlxuICogWW91IGNhbiBzZWUgdGhlIHN0eWxlcyBoZXJlOlxuICogaHR0cHM6Ly9naXRodWIuY29tL3RhaWx3aW5kY3NzL3RhaWx3aW5kY3NzL2Jsb2IvbWFzdGVyL2Nzcy9iYXNlLmNzc1xuICpcbiAqIElmIHVzaW5nIGBwb3N0Y3NzLWltcG9ydGAsIHVzZSB0aGlzIGltcG9ydCBpbnN0ZWFkOlxuICpcbiAqIEBpbXBvcnQgXCJ0YWlsd2luZGNzcy9iYXNlXCI7XG4gKi9cbiBAdGFpbHdpbmQgYmFzZTtcblxuIC8qKlxuICAqIFRoaXMgaW5qZWN0cyBhbnkgY29tcG9uZW50IGNsYXNzZXMgcmVnaXN0ZXJlZCBieSBwbHVnaW5zLlxuICAqXG4gICogSWYgdXNpbmcgYHBvc3Rjc3MtaW1wb3J0YCwgdXNlIHRoaXMgaW1wb3J0IGluc3RlYWQ6XG4gICpcbiAgKiBAaW1wb3J0IFwidGFpbHdpbmRjc3MvY29tcG9uZW50c1wiO1xuICAqL1xuIEB0YWlsd2luZCBjb21wb25lbnRzO1xuIFxuIC8qKlxuICAqIEhlcmUgeW91IHdvdWxkIGFkZCBhbnkgb2YgeW91ciBjdXN0b20gY29tcG9uZW50IGNsYXNzZXM7IHN0dWZmIHRoYXQgeW91J2RcbiAgKiB3YW50IGxvYWRlZCAqYmVmb3JlKiB0aGUgdXRpbGl0aWVzIHNvIHRoYXQgdGhlIHV0aWxpdGllcyBjb3VsZCBzdGlsbFxuICAqIG92ZXJyaWRlIHRoZW0uXG4gICpcbiAgKiBFeGFtcGxlOlxuICAqXG4gICogLmJ0biB7IC4uLiB9XG4gICogLmZvcm0taW5wdXQgeyAuLi4gfVxuICAqXG4gICogT3IgaWYgdXNpbmcgYSBwcmVwcm9jZXNzb3Igb3IgYHBvc3Rjc3MtaW1wb3J0YDpcbiAgKlxuICAqIEBpbXBvcnQgXCJjb21wb25lbnRzL2J1dHRvbnNcIjtcbiAgKiBAaW1wb3J0IFwiY29tcG9uZW50cy9mb3Jtc1wiO1xuICAqL1xuIFxuIC8qKlxuICAqIFRoaXMgaW5qZWN0cyBhbGwgb2YgVGFpbHdpbmQncyB1dGlsaXR5IGNsYXNzZXMsIGdlbmVyYXRlZCBiYXNlZCBvbiB5b3VyXG4gICogY29uZmlnIGZpbGUuXG4gICpcbiAgKiBJZiB1c2luZyBgcG9zdGNzcy1pbXBvcnRgLCB1c2UgdGhpcyBpbXBvcnQgaW5zdGVhZDpcbiAgKlxuICAqIEBpbXBvcnQgXCJ0YWlsd2luZGNzcy91dGlsaXRpZXNcIjtcbiAgKi9cbiBAdGFpbHdpbmQgdXRpbGl0aWVzO1xuIFxuIC8qKlxuICAqIEhlcmUgeW91IHdvdWxkIGFkZCBhbnkgY3VzdG9tIHV0aWxpdGllcyB5b3UgbmVlZCB0aGF0IGRvbid0IGNvbWUgb3V0IG9mIHRoZVxuICAqIGJveCB3aXRoIFRhaWx3aW5kLlxuICAqXG4gICogRXhhbXBsZSA6XG4gICpcbiAgKiAuYmctcGF0dGVybi1ncmFwaC1wYXBlciB7IC4uLiB9XG4gICogLnNrZXctNDUgeyAuLi4gfVxuICAqXG4gICogT3IgaWYgdXNpbmcgYSBwcmVwcm9jZXNzb3Igb3IgYHBvc3Rjc3MtaW1wb3J0YDpcbiAgKlxuICAqIEBpbXBvcnQgXCJ1dGlsaXRpZXMvYmFja2dyb3VuZC1wYXR0ZXJuc1wiO1xuICAqIEBpbXBvcnQgXCJ1dGlsaXRpZXMvc2tldy10cmFuc2Zvcm1zXCI7XG4gICovXG4gIl19 */
